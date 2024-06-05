@@ -85,7 +85,7 @@ const LeftSection = () => {
         <div>
           <p className="font-[500] text-[18px] mt-3">Sort By</p>
           <div className="mt-1.5 flex flex-col gap-1">
-            {sortByFilter?.map((item) => (
+            {sortByFilter?.map((item, index) => (
               <RadioText
                 key={index}
                 text={item.label}
