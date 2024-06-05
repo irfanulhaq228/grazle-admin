@@ -55,8 +55,9 @@ const LeftSection = () => {
         <div>
           <p className="font-[500] text-[18px] mt-3">Categories</p>
           <div className="mt-1.5 flex flex-col gap-1">
-            {categoriesFilter?.map((item) => (
+            {categoriesFilter?.map((item, index) => (
               <RadioText
+                key={index}
                 text={item.label}
                 id={item.id}
                 status={item.status}
@@ -69,8 +70,9 @@ const LeftSection = () => {
         <div>
           <p className="font-[500] text-[18px] mt-3">Product Type</p>
           <div className="mt-1.5 flex flex-col gap-1">
-            {productTypeFilter?.map((item) => (
+            {productTypeFilter?.map((item, index) => (
               <RadioText
+                key={index}
                 text={item.label}
                 id={item.id}
                 status={item.status}
@@ -85,6 +87,7 @@ const LeftSection = () => {
           <div className="mt-1.5 flex flex-col gap-1">
             {sortByFilter?.map((item) => (
               <RadioText
+                key={index}
                 text={item.label}
                 id={item.id}
                 status={item.status}

@@ -46,8 +46,13 @@ const OfferBox = () => {
         Valid up to 10 June 2024
       </p>
       <div className="mt-8 flex justify-end gap-3">
-        <Image src={editButton} className="w-[75px] sm:h-[36px] sm:w-[100px] cursor-pointer" />
         <Image
+          alt=""
+          src={editButton}
+          className="w-[75px] sm:h-[36px] sm:w-[100px] cursor-pointer"
+        />
+        <Image
+          alt=""
           src={deleteButton}
           className="w-[75px] sm:h-[36px] sm:w-[100px] cursor-pointer"
         />

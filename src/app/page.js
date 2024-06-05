@@ -25,13 +25,13 @@ export default function Home() {
             Discover endless possibilities
           </p>
           <p className="text-[60px] font-[600] text-white mt-7">
-            Explore, buy, and sell with our vibrant marketplace!"
+            Explore, buy, and sell with our vibrant marketplace!
           </p>
         </div>
-        <Image src={loginImg} className="w-[400px] mb-[-50px]" />
+        <Image alt="" src={loginImg} className="w-[400px] mb-[-50px]" />
       </div>
       <div className="w-full xl:w-[55%] flex flex-col items-center py-[50px] justify-center">
-        <Image src={grazleLogo} className="w-[200px]" />
+        <Image alt="" src={grazleLogo} className="w-[200px]" />
         <p className="text-[40px] font-[700] text-center mt-[25px]">
           Welcome Back
         </p>
@@ -40,14 +40,14 @@ export default function Home() {
         </p>
         <div className="flex flex-col gap-5 w-[400px]">
           <div className="bg-[#F5F7F9] flex items-center h-[60px] w-[100%] rounded-[11px] px-5 gap-5">
-            <Image src={emailSvg} />
+            <Image alt="" src={emailSvg} />
             <input
               className="flex-1 focus:outline-none bg-transparent font-[500] text-[15px]"
               placeholder="Email Address"
             />
           </div>
           <div className="bg-[#F5F7F9] flex items-center h-[60px] w-[100%] rounded-[11px] px-5 gap-5">
-            <Image src={passwordSvg} />
+            <Image alt="" src={passwordSvg} />
             <input
               type="password"
               className="flex-1 focus:outline-none bg-transparent font-[500] text-[15px]"
@@ -85,7 +85,7 @@ export default function Home() {
           </button>
         </div>
         <p className="text-center font-[500] text-[var(--text-color-body)] mt-[35px]">
-          Don't Have an Account?{" "}
+          Do not Have an Account?{" "}
           <span className="text-[var(--text-color)]">Sign Up</span>
         </p>
       </div>

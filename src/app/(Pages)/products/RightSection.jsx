@@ -21,7 +21,7 @@ const RightSection = () => {
           <tbody>
             <tr className="text-[14px] leading-[35px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -35,7 +35,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[35px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -49,7 +49,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[30px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -63,7 +63,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[35px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -77,7 +77,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[35px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -91,7 +91,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[30px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -105,7 +105,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[35px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -119,7 +119,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[35px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>
@@ -133,7 +133,7 @@ const RightSection = () => {
             </tr>
             <tr className="text-[14px] leading-[30px]">
               <td className="h-[100%] flex gap-1 items-center">
-                <Image src={product} />
+                <Image alt="" src={product} />
                 <label>Electronic LED</label>
               </td>
               <td>John Due</td>

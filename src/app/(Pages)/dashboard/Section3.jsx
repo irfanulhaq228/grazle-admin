@@ -60,6 +60,7 @@ const Section3 = () => {
             <td>PK23435</td>
             <td className="flex items-center gap-1.5 h-[50px]">
               <Image
+                alt=""
                 src={product}
                 className="h-[26px] w-[26px] rounded-[5px]"
               />
@@ -78,6 +79,7 @@ const Section3 = () => {
             <td>PK23435</td>
             <td className="flex items-center gap-1.5 h-[50px]">
               <Image
+                alt=""
                 src={product}
                 className="h-[26px] w-[26px] rounded-[5px]"
               />

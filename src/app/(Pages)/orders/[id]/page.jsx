@@ -56,7 +56,7 @@ const OrderDetails = () => {
           </div>
           <div className="mt-[20px] sm:mt-[20px] border border-gray-200 rounded-[8px] p-[20px] xl:p-[30px] flex flex-col lg:flex-row gap-5 md:gap-7 xl:gap-10 items-center">
             <div>
-              <Image src={productOne} className="w-[150px] xl:w-[180px]" />
+              <Image alt="" src={productOne} className="w-[150px] xl:w-[180px]" />
             </div>
             <div className="flex-1 flex flex-col sm:flex-row justify-between gap-5">
               <div className="flex flex-col gap-1 flex-1">
