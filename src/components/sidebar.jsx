@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
+import { updateSidebar } from "@/features/features";
 
 import { RxDashboard } from "react-icons/rx";
 import { LuShoppingBag } from "react-icons/lu";
@@ -14,7 +15,7 @@ import {
   HiOutlineExclamationCircle,
 } from "react-icons/hi2";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaUserTie } from "react-icons/fa";
-import { updateSidebar } from "@/features/features";
+import { BsPatchCheck } from "react-icons/bs";
 
 const Sidebar = () => {
   const navigate = useRouter();
@@ -30,7 +31,7 @@ const Sidebar = () => {
           showSidebar
             ? "absolute md:relative flex h-[85%] min-h-[550px] md:h-auto"
             : "absolute md:relative hidden md:flex md:h-auto"
-        } w-[240px] bg-white rounded-tr-[8px] mt-[30px] shadow-2xl md:shadow-md px-[20px] py-[25px] flex-col gap-1.5 z-[999]`}
+        } w-[240px] bg-white rounded-tr-[8px] mt-[30px] shadow-2xl md:shadow-md px-[10px] py-[25px] flex-col gap-1.5 z-[999]`}
       >
         <button
           className="absolute md:hidden text-[var(--text-color)] right-5 scale-[1.5] top-2"
@@ -69,9 +70,15 @@ const Sidebar = () => {
           navigate={navigate}
         />
         <SidebarPageTemplate
-          icon={<FaUserTie className="w-[20px] h-[20px]" />}
+          icon={<FaUserTie className="w-[20px] h-[18px]" />}
           label={"Sellers"}
           navigateTo={"sellers"}
+          navigate={navigate}
+        />
+        <SidebarPageTemplate
+          icon={<BsPatchCheck className="w-[20px] h-[20px]" />}
+          label={"Seller Verification"}
+          navigateTo={"seller-verification"}
           navigate={navigate}
         />
         <SidebarPageTemplate
