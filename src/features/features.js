@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   pageNavigation: "",
-  showSidebar: true,
+  showSidebar: false,
 };
 
 export const featuresSlice = createSlice({

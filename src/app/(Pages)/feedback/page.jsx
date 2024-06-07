@@ -13,6 +13,7 @@ import { updatePageNavigation } from "@/features/features";
 import img from "@/assets/customer.png";
 import { BsThreeDots } from "react-icons/bs";
 import { IoEye } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 const Feedback = () => {
   const dispatch = useDispatch();
@@ -77,6 +78,7 @@ const Feedback = () => {
 export default Feedback;
 
 const Lists = ({ item, fn_viewDetails, selectedCustomer }) => {
+  const navigate = useRouter();
   return (
     <div
       className="border border-gray-200 rounded-[8px] p-[20px] relative"
@@ -103,7 +105,10 @@ const Lists = ({ item, fn_viewDetails, selectedCustomer }) => {
         Elementum id eu nec et lectus.
       </p>
       <div className="sm:absolute sm:right-[20px] sm:top-[20px] flex items-center justify-center mt-4 sm:mt-0 gap-3">
-        <button className="rounded-[4px] h-[30px] w-[75px] text-[12px] border border-[#00A1FF] text-[#00A1FF] hover:bg-[#00A1FF] hover:text-white">
+        <button
+          className="rounded-[4px] h-[30px] w-[75px] text-[12px] border border-[#00A1FF] text-[#00A1FF] hover:bg-[#00A1FF] hover:text-white"
+          onClick={() => navigate.push(`/feedback/${item.id}`)}
+        >
           Open
         </button>
         <BsThreeDots
@@ -112,7 +117,7 @@ const Lists = ({ item, fn_viewDetails, selectedCustomer }) => {
         />
         {selectedCustomer === item.id && (
           <div className="absolute right-[25px] top-0">
-            <ViewDetails />
+            <ViewDetails id={item.id} />
           </div>
         )}
       </div>
@@ -121,8 +126,12 @@ const Lists = ({ item, fn_viewDetails, selectedCustomer }) => {
 };
 
 const ViewDetails = ({ id }) => {
+  const navigate = useRouter();
   return (
-    <div className="absolute py-[10px] px-[10px] flex flex-col items-center text-[var(--text-color-body)] bg-white rounded-[8px] shadow-md border border-gray-100 w-[max-content] left-[-145px] top-[13px] cursor-pointer">
+    <div
+      className="absolute py-[10px] px-[10px] flex flex-col items-center text-[var(--text-color-body)] bg-white rounded-[8px] shadow-md border border-gray-100 w-[max-content] left-[-145px] top-[13px] cursor-pointer"
+      onClick={() => navigate.push(`/feedback/${id}`)}
+    >
       <div className="flex items-center gap-2.5 w-full px-2 py-1.5 hover:bg-gray-100 rounded-sm">
         <IoEye className="w-[20px] h-[20px]" />
         <p className="text-[14px]">View Details</p>

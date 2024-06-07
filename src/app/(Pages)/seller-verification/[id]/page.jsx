@@ -97,9 +97,9 @@ export default SellerVerificationId;
 
 const DocumentUploaded = () => {
   return (
-    <div className="border border-gray-200 rounded-[8px] p-[20px] flex items-center gap-10">
+    <div className="border border-gray-200 rounded-[8px] p-[20px] flex items-center gap-4 sm:gap-10 flex-wrap">
       <Image alt="" src={documentSvg} className="h-[50px] w-[50px]" />
-      <div className="flex-1 flex items-center justify-between">
+      <div className="flex-1 flex items-center justify-between min-w-[max-content]">
         <div>
           <p className="text-[18px] font-[500]">Business License</p>
           <p className="text-[14px] text-[var(--text-color-body)]">
@@ -109,12 +109,21 @@ const DocumentUploaded = () => {
         <div>
           <button
             className={
-              "bg-[#00A1FF] h-[40px] px-[20px] font-[500] rounded-[8px] text-white hover:bg-transparent hover:text-[#00A1FF] transition-all duration-100 outline outline-1"
+              "bg-[#00A1FF] h-[40px] px-[20px] font-[500] rounded-[8px] text-white hover:bg-transparent hover:text-[#00A1FF] transition-all duration-100 outline outline-1 hidden sm:block"
             }
           >
             View
           </button>
         </div>
+      </div>
+      <div>
+        <button
+          className={
+            "bg-[#00A1FF] h-[40px] px-[20px] font-[500] rounded-[8px] text-white hover:bg-transparent hover:text-[#00A1FF] transition-all duration-100 outline outline-1 block sm:hidden"
+          }
+        >
+          View
+        </button>
       </div>
     </div>
   );

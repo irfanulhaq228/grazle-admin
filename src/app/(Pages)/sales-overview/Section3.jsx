@@ -33,9 +33,9 @@ const Boxs = () => {
         <p className="text-[13px] text-[var(--text-color-body)] font-[500]">
           Housing
         </p>
-        <p className="font-[600]">$250.00</p>
+        <p className="text-[14px] sm:text-[16px] font-[600]">$250.00</p>
         <p className="flex items-center gap-4">
-          <span className="text-[13px] font-[500]">15%</span>
+          <span className="text-[11px] sm:text-[13px] font-[500]">15%</span>
           <span className="text-[var(--text-color-body-minus)]">
             <FaArrowUp />
           </span>

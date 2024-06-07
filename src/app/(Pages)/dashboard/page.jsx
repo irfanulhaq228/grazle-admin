@@ -85,7 +85,7 @@ const Dashboard = () => {
       <Navbar />
       <div className="flex-1 flex">
         <Sidebar />
-        <div className="flex-1 mt-[30px] px-[22px]">
+        <div className="flex-1 mt-[30px] p-[10px] sm:px-[25px]">
           <Section1 />
           <Section3 />
           {/* all data in notepad */}

@@ -10,7 +10,7 @@ import {
   RiDiscountPercentLine,
 } from "react-icons/ri";
 import { IoBagRemoveOutline } from "react-icons/io5";
-import { FiSettings } from "react-icons/fi";
+import { FiSettings, FiShoppingBag } from "react-icons/fi";
 import {
   HiOutlineExclamationCircle, HiOutlineCreditCard
 } from "react-icons/hi2";
@@ -60,7 +60,7 @@ const Sidebar = () => {
           navigate={navigate}
         />
         <SidebarPageTemplate
-          icon={<IoBagRemoveOutline className="w-[21px] h-[21px]" />}
+          icon={<FiShoppingBag className="w-[21px] h-[21px]" />}
           label={"Products"}
           navigateTo={"products"}
           navigate={navigate}

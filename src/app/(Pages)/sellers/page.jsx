@@ -24,7 +24,7 @@ const Sellers = () => {
       <Navbar />
       <div className="flex-1 flex">
         <Sidebar />
-        <div className="flex-1 mt-[30px] px-[22px]">
+        <div className="flex-1 mt-[30px] px-[10px] sm:px-[25px]">
           <SearchOnTop />
           <div className="my-[20px] p-[30px] bg-white rounded-[8px] shadow-sm overflow-x-auto w-[94vw] md:w-[67vw] lg:w-[75vw] xl:w-auto">
             <div className="flex gap-10 mb-[15px] w-[max-content]">
