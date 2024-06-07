@@ -74,14 +74,14 @@ const SellerVerificationId = () => {
           <div className="flex gap-5 sm:gap-10 mt-5">
             <button
               className={
-                "bg-[#06E775] h-[40px] w-[120px] font-[500] rounded-[8px] text-white hover:bg-transparent hover:text-[#06E775] transition-all duration-100 outline outline-1 pt-1"
+                "bg-[#06E775] h-[40px] w-[120px] font-[500] rounded-[8px] text-white hover:bg-transparent hover:text-[#06E775] transition-all duration-100 outline outline-1"
               }
             >
               Verify
             </button>
             <button
               className={
-                "bg-[#FE4242] h-[40px] w-[120px] font-[500] rounded-[8px] text-white hover:bg-transparent hover:text-[#FE4242] transition-all duration-100 outline outline-1 pt-1"
+                "bg-[#FE4242] h-[40px] w-[120px] font-[500] rounded-[8px] text-white hover:bg-transparent hover:text-[#FE4242] transition-all duration-100 outline outline-1"
               }
             >
               Decline

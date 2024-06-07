@@ -12,10 +12,12 @@ import {
 import { IoBagRemoveOutline } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import {
-  HiOutlineExclamationCircle,
+  HiOutlineExclamationCircle, HiOutlineCreditCard
 } from "react-icons/hi2";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight, FaUserTie } from "react-icons/fa";
 import { BsPatchCheck } from "react-icons/bs";
+import { PiRankingLight } from "react-icons/pi";
+import { IoMdPhotos } from "react-icons/io";
 
 const Sidebar = () => {
   const navigate = useRouter();
@@ -82,9 +84,27 @@ const Sidebar = () => {
           navigate={navigate}
         />
         <SidebarPageTemplate
+          icon={<HiOutlineCreditCard className="w-[21px] h-[21px]" />}
+          label={"Credit Limit"}
+          navigateTo={"credit-limit"}
+          navigate={navigate}
+        />
+        <SidebarPageTemplate
           icon={<RiUserStarLine className="w-[20px] h-[20px]" />}
           label={"Customers"}
           navigateTo={"customers"}
+          navigate={navigate}
+        />
+        <SidebarPageTemplate
+          icon={<PiRankingLight className="w-[20px] h-[20px]" />}
+          label={"Referral Ranking"}
+          navigateTo={"referral-ranking"}
+          navigate={navigate}
+        />
+        <SidebarPageTemplate
+          icon={<IoMdPhotos className="w-[20px] h-[20px]" />}
+          label={"Grazle Media"}
+          navigateTo={"grazle-media"}
           navigate={navigate}
         />
         <SidebarPageTemplate
