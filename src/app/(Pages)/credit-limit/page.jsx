@@ -84,7 +84,7 @@ const SellerData = () => {
         <div className="flex flex-col justify-center gap-2">
           <div className="flex gap-3 items-center text-[var(--text-color-body)]">
             <MdOutlineStorefront className="h-[19px] w-[19px]" />
-            <p>John's Tech Store LLC</p>
+            <p>John Tech Store LLC</p>
           </div>
           <div className="flex gap-3 items-center text-[var(--text-color-body)]">
             <LiaStoreAltSolid className="h-[19px] w-[19px]" />
